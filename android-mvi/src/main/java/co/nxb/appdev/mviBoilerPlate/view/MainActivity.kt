@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
-import co.nxb.appdev.mviBoilerPlate.MainIntent
-import co.nxb.appdev.mviBoilerPlate.MainState
+import co.nxb.appdev.mviBoilerPlate.intents.MainIntent
+import co.nxb.appdev.mviBoilerPlate.states.MainState
 import co.nxb.appdev.mviBoilerPlate.adapter.ItemAdapter
 import co.nxb.appdev.mviBoilerPlate.app.arch.IView
 import co.nxb.appdev.mviBoilerPlate.databinding.ActivityMainBinding

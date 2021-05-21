@@ -9,8 +9,8 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.consumeAsFlow
 import kotlinx.coroutines.launch
-import co.nxb.appdev.mviBoilerPlate.MainState
-import co.nxb.appdev.mviBoilerPlate.MainIntent
+import co.nxb.appdev.mviBoilerPlate.states.MainState
+import co.nxb.appdev.mviBoilerPlate.intents.MainIntent
 import co.nxb.appdev.mviBoilerPlate.app.arch.IModel
 import co.nxb.appdev.mviBoilerPlate.data.repoistory.Repoistory
 import co.nxb.appdev.mviBoilerPlate.networkinterface.ApiInterface

@@ -1,9 +1,7 @@
-package co.nxb.appdev.mviBoilerPlate
-
+package co.nxb.appdev.mviBoilerPlate.states
 
 import co.nxb.appdev.mviBoilerPlate.app.arch.IState
 import co.nxb.appdev.mviBoilerPlate.data.model.User
-
 
 data class MainState(
     val users: List<User>? = listOf(),

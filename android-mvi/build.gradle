@@ -3,7 +3,6 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
 }
-
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -13,12 +12,16 @@ android {
         viewBinding true
     }
     defaultConfig {
+        def versionMajor = 1
+        def versionMinor = 1
+        def versionPatch = 1
+        def releaseVersionCode = (versionMajor*10000) + (versionMinor*100) + versionPatch
+        def releaseVersionName = "${versionMajor}.${versionMinor}.${versionPatch}"
         applicationId "co.nxb.appdev.mviBoilerPlate"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
-
+        versionCode releaseVersionCode
+        versionName releaseVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
